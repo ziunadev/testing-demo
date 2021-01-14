@@ -3,12 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="js/contoh.js"></script>
+    <!-- <script src="js/showTime.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
     <title>TESTING</title>
 </head>
 
-<body class="iniclass">
+<body class="iniclass" onload="realTimeClock()">
     <div class="container">
         <div class="font-position">
             <section id="font"><span class="typewrite" data-period="2000"
@@ -17,7 +20,7 @@
         </div>
         <div class="center">
             <p id="editable-content" contenteditable="true">you can change this</p>
-            <p id="clock" onclick="realTimeClock()"">.</p>
+            <p id="clock"></p>
         </div>
         <!-- <div class="clock-center">
         </div> -->
@@ -25,9 +28,6 @@
             <img id="logo" src="assets/warna.svg" alt="heart logo">
         </div>
     </div>
-    <script src="js/contoh.js"></script>
-    <script src="js/showTime.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
