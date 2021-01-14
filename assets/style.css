@@ -2,13 +2,13 @@
 
 /* Main Page*/
 .iniclass {
-    background-color: #2e3131;
+    background-color: #2E3440;
 }
 .container {
     height: 964px;
     position: relative;
     border: 2px solid white;
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 #font {
@@ -28,30 +28,34 @@
 }
 
 .typewrite {
-    color: white;
+    color: #ECEFF4;
 }
 
 #editable-content {
     /* Styiling */
     text-align: center;
-    color: white;
+    color:#ECEFF4;
     font-family: 'Raleway', sans-serif;
     font-size: 20pt;
+    position: relative;
     letter-spacing: 7px;
+    width: 1080px;
+    min-height: 0px;
+    max-height: 40px;
 }
 
 #clock {
-    margin: -5%;
+    margin: -2%;
     text-align: center;
     font-size: 4vw;
-    color: white;
+    color: #ECEFF4;
     font-family: 'Roboto', sans-serif;
 }
 
 .center {
     margin: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

@@ -1,3 +1,4 @@
+// Make typing effect
 var movText = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -59,6 +60,7 @@ window.onload = function () {
     // document.body.appendChild(css);
 };
 
+// Real Time Clock2
 function realTimeClock() {
     var rtClock = new Date();
 
