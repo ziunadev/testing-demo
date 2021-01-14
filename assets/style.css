@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@100&display=swap');
 
 /* Main Page*/
 .iniclass {
@@ -40,23 +40,31 @@
     letter-spacing: 7px;
 }
 
+#clock {
+    margin: -5%;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 .center {
     margin: 0;
     position: absolute;
-    top: 8%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-#clock {
-    width: 100%;
-    position: absolute;
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
+/* 
+.clock-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
 
 #logo {
     width: 30pt;
