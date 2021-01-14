@@ -52,7 +52,8 @@ window.onload = function () {
             new movText(elements[i], JSON.parse(toRotate), period);
         }
     }
-    realTimeClock()
+    realTimeClock();
+    changeColor();
     // // INJECT CSS
     // var css = document.createElement("style");
     // css.type = "text/css";
@@ -84,4 +85,14 @@ function realTimeClock() {
     // Display the Clock
     document.getElementById('clock').innerHTML = jam;
     var t = setTimeout(realTimeClock, 500);
+}
+
+// Change color
+function changeColor() {
+    var color = ["#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD", "#3B4252", "#434C5E", "#4C566A", "#D8DEE9", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"];
+    var i = 0;
+    document.querySelector("img").addEventListener("click", function () {
+        i = 1 < color.length ? ++i : 0;
+        document.querySelector("body").style.background = color[i];
+    })
 }
