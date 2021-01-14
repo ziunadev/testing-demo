@@ -51,6 +51,7 @@ window.onload = function () {
             new movText(elements[i], JSON.parse(toRotate), period);
         }
     }
+    realTimeClock()
     // // INJECT CSS
     // var css = document.createElement("style");
     // css.type = "text/css";
