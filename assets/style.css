@@ -47,9 +47,10 @@
 #clock {
     margin: -2%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     color: #ECEFF4;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
 .center {
