@@ -7,7 +7,7 @@ var movText = function (el, toRotate, period) {
     this.txt = '';
     this.tick();
     this.isDeleting = false;
-};
+}
 
 movText.prototype.tick = function () {
     var i = this.loopNum % this.toRotate.length;
@@ -40,7 +40,7 @@ movText.prototype.tick = function () {
     setTimeout(function () {
         that.tick();
     }, delta);
-};
+}
 
 window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
@@ -59,7 +59,7 @@ window.onload = function () {
     // css.type = "text/css";
     // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     // document.body.appendChild(css);
-};
+}
 
 // Real Time Clock2
 function realTimeClock() {
